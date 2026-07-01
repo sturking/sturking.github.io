@@ -2,9 +2,10 @@
 nav {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
 nav a {
-    /* Customize layout/display */
+/* Customize layout/display */
   display: inline-block;
   padding: 10px 16px;
   border: 3px solid #7CFC00;
@@ -15,4 +16,11 @@ nav a {
 /* Hover requirement */
 nav a:hover {
   background-color: #7B68EE;
+}
+
+/* Center main content column on page */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }

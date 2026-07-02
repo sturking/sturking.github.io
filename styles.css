@@ -1,11 +1,30 @@
+/* Customize title (located in index.html) */
+header h1,
+.subtitle {
+  text-align: center;
+  color: #7B68EE;
+  font-weight: bold;
+  margin-top: 100;
+}
+
+/* Customize subtitle (located in index.html) */
+header h2,
+.subtitle {
+  text-align: center;
+  color: #7B68EE;
+  font-weight: normal;
+  margin-top: 0;
+}
+
 /* Congfigure the menu row & flex display */
 nav {
   display: flex;
   gap: 1rem;
   justify-content: center;
+  padding: 10px 16px;
 }
 nav a {
-/* Customize layout/display */
+/* Customize menu layout */
   display: inline-block;
   padding: 10px 16px;
   border: 3px solid #7CFC00;
@@ -13,14 +32,76 @@ nav a {
   color: #fff;
   background-color: #483D8D;
 }
-/* Hover requirement */
+/* Hover requirement for menu */
 nav a:hover {
   background-color: #7B68EE;
 }
 
-/* Center menu row on page */
+/* Center abstract and key terms sections on page */
 main {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 0 1rem;
+}
+
+/* Indent introduction and key terms text (located in index.html) */
+.indent {
+  margin-left: 2.5em;
+}
+
+/* Customize footer */
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #4b4b4b;
+  padding: 10px 16px;
+}
+
+/* Per-page H1 sizes */
+.home-page h1 {
+  font-size: 3rem;
+}
+
+.references-page h1 {
+  font-size: 2rem;
+}
+
+.browsers-page h1 {
+  font-size: 2.5rem;
+}
+
+.browserwars-page h1 {
+  font-size: 2.5rem;
+}
+
+.concepts-page h1 {
+  font-size: 2.5rem;
+}
+
+.about-page h1 {
+  font-size: 2rem;
+}
+
+/* Per-page subtitles sizes */
+.home-page .subtitle {
+  font-size: 1.5rem;
+}
+
+.references-page .subtitle {
+  font-size: 1.2rem;
+}
+
+.browsers-page .subtitle  {
+  font-size: 2.5rem;
+}
+
+.browserwars-page .subtitle  {
+  font-size: 2.5rem;
+}
+
+.concepts-page .subtitle  {
+  font-size: 2.5rem;
+}
+
+.about-page .subtitle  {
+  font-size: 2rem;
 }

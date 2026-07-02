@@ -25,13 +25,17 @@ nav {
 }
 nav a {
 /* Customize menu layout */
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   padding: 10px 16px;
   border: 3px solid #7CFC00;
   text-decoration: none;
   color: #fff;
   background-color: #483D8D;
 }
+
 /* Hover requirement for menu */
 nav a:hover {
   background-color: #7B68EE;

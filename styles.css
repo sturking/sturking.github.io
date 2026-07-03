@@ -1,3 +1,8 @@
+/* Background color of entire website */
+body {
+  background-color: #faf0e6;
+}
+
 /* Customize title (located in index.html) */
 header h1,
 .subtitle {
@@ -43,16 +48,18 @@ nav a:hover {
   color: #36399a;
   background-color: #fee012;
 }
-
-/* Center abstract and key terms sections on page */
+  /* Adjust the margin of the main body text on pages */
 main {
   max-width: 900px;
   margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  padding-top: 0.5rem;
 }
 
 /* Indent introduction and key terms text (located in index.html) */
 .indent {
-  margin-left: 2.5em;
+  margin-left: 1.5em;
 }
 
 /* Customize footer */
@@ -131,9 +138,4 @@ footer {
   font-size: 2.5rem;
   margin-top: 1.25rem;
   margin-bottom: 1rem;
-}
-
-/* Background color of entire website */
-body {
-  background-color: #faf0e6;
 }

@@ -139,3 +139,14 @@ footer {
   margin-top: 1.25rem;
   margin-bottom: 1rem;
 }
+
+/* Configure APA-style reference list */
+.references {
+  list-style: none;
+  padding-left: 1em;
+}
+.references li {
+  padding-left: 2em;
+  text-indent: -2em;
+  margin-bottom: 0.75rem;
+}

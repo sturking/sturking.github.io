@@ -153,7 +153,7 @@ footer {
 }
 
 /* QUIZ PAGE */
-/* Each question is a bordered card */
+/* Each question contained in a bordered box */
 .question {
   margin-bottom: 1.25rem;
   padding: 1.25rem;
@@ -165,6 +165,9 @@ footer {
   font-size: 1.1rem;
   font-weight: bold;
   color: #36399a;
+  float: left;
+  width: 100%;
+  margin-bottom: 0.75rem;
 }
 
 /* One answer choice per line */
@@ -206,6 +209,7 @@ footer {
   padding-top: 0.75rem;
   border-top: 1px solid #c9c6c0;
   font-weight: bold;
+  white-space: pre-line;
 }
  
 .is-correct .feedback {

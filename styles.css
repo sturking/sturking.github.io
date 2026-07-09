@@ -31,7 +31,7 @@ header h1 a {
 
 }
 
-/* EXEPTIONS: The home page title and subtitle are different than the rest of the pages.*/
+/* EXCEPTIONS: The home page title and subtitle are different than the rest of the pages.*/
 .home-page header h1 {
   font-size: 3rem;
   text-align: center;
@@ -41,7 +41,7 @@ header h1 a {
 
 .home-page .subtitle {
   font-size: 1.6rem;
-  margin-top: -7px;
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -57,11 +57,11 @@ nav ul {
   justify-content: center;
   list-style: none;
   margin: 0;
-  padding: 0 ;
+  padding: 0;
 }
 
 /* Customize menu layout */
- nav a {
+nav a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,12 +88,12 @@ nav a[aria-current="page"] {
   border: 3px solid #ed008c;
 }
 
-  /* Adjust the margin of the main body text on pages */
+/* Adjust the margin of the main body text on pages */
 main {
   max-width: 900px;
   margin: 0 auto;
   padding-left: 2rem;
-  padding-right: 3rem;
+  padding-right: 3.5rem;
   padding-top: 0.5rem;
 }
 
@@ -115,7 +115,7 @@ main > .section-title:first-child {
   margin-top: 0.5rem;
 }
 
-/* Indent introduction and key terms text (located in index.html) */
+/* Indent abstract and key terms text */
 .indent {
   margin-left: 1.5em;
 }

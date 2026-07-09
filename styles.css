@@ -36,12 +36,12 @@ header h1 a {
   font-size: 3rem;
   text-align: center;
   padding: 0;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .home-page .subtitle {
   font-size: 1.6rem;
-  margin-top: 0;
+  margin-top: -7px;
   margin-bottom: 20px;
 }
 
@@ -84,6 +84,7 @@ nav a[aria-current="page"] {
   color: #36399a;
   background-color: #fee012;
   font-weight: bold;
+  border: 3px solid #ed008c;
 }
 
   /* Adjust the margin of the main body text on pages */

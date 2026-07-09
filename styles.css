@@ -14,7 +14,7 @@ header h1 {
   padding: 0px 10px;
 }
 
-/* The title links home back to head, but maintain its appearance as a heading. */
+/* The title is a link (navigates back to home page when clicked), but maintain its appearance as a heading. */
 header h1 a {
   color: inherit;
 }
@@ -31,7 +31,7 @@ header h1 a {
 
 }
 
-/* EXECPTIONS: The home page title and subtitle are different then the rest of the pages.*/
+/* EXEPTIONS: The home page title and subtitle are different than the rest of the pages.*/
 .home-page header h1 {
   font-size: 3rem;
   text-align: center;
@@ -45,7 +45,7 @@ header h1 a {
   margin-bottom: 20px;
 }
 
-/* Congfigure the menu row & flex display */
+/* Configure the menu row & flex display */
 nav {
   padding: 10px 16px;
 }
@@ -74,7 +74,8 @@ nav ul {
 }
 
 /* Hover requirement for menu */
-nav a:hover {
+nav a:hover,
+nav a:focus-visible {
   color: #36399a;
   background-color: #fee012;
 }
@@ -96,9 +97,40 @@ main {
   padding-top: 0.5rem;
 }
 
+/* Section headings within the page content */
+.section-title {
+  font-size: 1.1rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+}
+
+/* Section headings that are bold only, with no underline */
+.section-title.plain {
+  text-decoration: none;
+}
+ 
+/* The first heading on a page sits directly below the menu */
+main > .section-title:first-child {
+  margin-top: 0.5rem;
+}
+
 /* Indent introduction and key terms text (located in index.html) */
 .indent {
   margin-left: 1.5em;
+}
+
+/* Center the welcome line on the home page */
+.welcome {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Body paragraphs: left margin plus a first-line indent */
+.body-text {
+  margin-top: 0;
+  margin-left: 1.5em;
+  text-indent: 2.5em;
 }
 
 /* Customize footer */

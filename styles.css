@@ -3,35 +3,65 @@ body {
   background-color: #faf0e6;
 }
 
-/* Customize title (located in index.html) */
-header h1,
-.subtitle {
-  text-align: center;
+/* Customize title (appears on all pages) */
+header h1 {
+  font-size: 1.25rem;
+  text-align: left;
   color: #36399a;
   font-weight: bold;
-  margin-top: 100;
+  margin-top: 0.5rem;
   text-decoration: underline;
+  padding: 0px 10px;
 }
 
-/* Customize subtitle (located in index.html) */
-header h2,
+/* The title links home back to head, but maintain its appearance as a heading. */
+header h1 a {
+  color: inherit;
+}
+
+/* Customize subtitle (appears on all pages) */
 .subtitle {
+  font-size: 2.5rem;
   text-align: center;
   color: #5c60d4;
   font-weight: bold;
-  margin-top: 0;
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
   text-decoration: none;
+
+}
+
+/* EXECPTIONS: The home page title and subtitle are different then the rest of the pages.*/
+.home-page header h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.home-page .subtitle {
+  font-size: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 /* Congfigure the menu row & flex display */
 nav {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
   padding: 10px 16px;
 }
-nav a {
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0 ;
+}
+
 /* Customize menu layout */
+ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,6 +78,14 @@ nav a:hover {
   color: #36399a;
   background-color: #fee012;
 }
+
+/* Hover colors indicate what page the user is currently on */
+nav a[aria-current="page"] {
+  color: #36399a;
+  background-color: #fee012;
+  font-weight: bold;
+}
+
   /* Adjust the margin of the main body text on pages */
 main {
   max-width: 900px;
@@ -68,88 +106,6 @@ footer {
   font-size: 0.85rem;
   color: #4b4b4b;
   padding: 10px 16px;
-}
-
-/* Per-page H1 sizes */
-.home-page h1 {
-  font-size: 3rem;
-}
-
-.browsers-page h1 {
-  font-size: 1.25rem;
-  text-align: left;
-  padding: 0px 10px;
-}
-
-.browserwars-page h1 {
-  font-size: 1.25rem;
-  text-align: left;
-  padding: 0px 10px;
-}
-
-.concepts-page h1 {
-  font-size: 1.25rem;
-  text-align: left;
-  padding: 0px 10px;
-}
-
-.references-page h1 {
-  font-size: 1.25rem;
-  text-align: left;
-  padding: 0px 10px;
-}
-
-.about-page h1 {
-  font-size: 1.25rem;
-  text-align: left;
-  padding: 0px 10px;
-}
-
-.quiz-page h1 {
-  font-size: 1.25rem;
-  text-align: left;
-  padding: 0px 10px;
-}
-
-/* Per-page subtitles sizes */
-.home-page .subtitle {
-  font-size: 1.5rem;
-}
-
-.browsers-page .subtitle  {
-  font-size: 2.5rem;
-  margin-top: 1.25rem;
-  margin-bottom: 1rem;
-}
-
-.browserwars-page .subtitle  {
-  font-size: 2.5rem;
-  margin-top: 1.25rem;
-  margin-bottom: 1rem;
-}
-
-.concepts-page .subtitle  {
-  font-size: 2.5rem;
-  margin-top: 1.25rem;
-  margin-bottom: 1rem;
-}
-
-.references-page .subtitle {
-  font-size: 2.5rem;
-  margin-top: 1.25rem;
-  margin-bottom: 1rem;
-}
-
-.about-page .subtitle  {
-  font-size: 2.5rem;
-  margin-top: 1.25rem;
-  margin-bottom: 1rem;
-}
-
-.quiz-page .subtitle  {
-  font-size: 2.5rem;
-  margin-top: 1.25rem;
-  margin-bottom: 1rem;
 }
 
 /* Configure APA-style reference list */

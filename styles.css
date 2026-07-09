@@ -105,6 +105,12 @@ footer {
   padding: 0px 10px;
 }
 
+.quiz-page h1 {
+  font-size: 1.25rem;
+  text-align: left;
+  padding: 0px 10px;
+}
+
 /* Per-page subtitles sizes */
 .home-page .subtitle {
   font-size: 1.5rem;
@@ -135,6 +141,12 @@ footer {
 }
 
 .about-page .subtitle  {
+  font-size: 2.5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.quiz-page .subtitle  {
   font-size: 2.5rem;
   margin-top: 1.25rem;
   margin-bottom: 1rem;

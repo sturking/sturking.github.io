@@ -29,9 +29,214 @@
 
     <!-- ===== Page Content ===== -->
     <main>
-      <h2 class="section-title">Questions...</h2>
-      <p class="body-text">Quiz contents...</p>
+      <h2 class="section-title">Test Your Knowledge:</h2>
+      <p class="body-text">
+        Ten questions based on the topics covered throughout this site. Each is
+        worth 10 points, and 60 of 100 points (60%) is a passing score.
+      </p>
     </main>
+
+    <!-- ===== Quiz Questions ===== -->
+    <form id="quizForm">
+      <!-- Question 1: multiple choice -->
+      <fieldset class="question" id="box-q1">
+        <legend>
+          1. Who built the first web server and web browser in 1990?
+        </legend>
+        <label
+          ><input type="radio" name="q1" value="andreessen" /> Marc
+          Andreessen</label
+        >
+        <label
+          ><input type="radio" name="q1" value="berners-lee" /> Tim
+          Berners-Lee</label
+        >
+        <label
+          ><input type="radio" name="q1" value="eich" /> Brendan Eich</label
+        >
+        <label><input type="radio" name="q1" value="gates" /> Bill Gates</label>
+        <p class="feedback" id="fb-q1" hidden></p>
+      </fieldset>
+
+      <!-- Question 2: multiple choice -->
+      <fieldset class="question" id="box-q2">
+        <legend>
+          2. Which company acquired Netscape in 1998 for $4.2 billion?
+        </legend>
+        <label
+          ><input type="radio" name="q2" value="microsoft" />
+          WorldWideWeb</label
+        >
+        <label><input type="radio" name="q2" value="yahoo" /> Yahoo</label>
+        <label><input type="radio" name="q2" value="ibm" /> IBM</label>
+        <label
+          ><input type="radio" name="q2" value="aol" /> America Online</label
+        >
+        <p class="feedback" id="fb-q2" hidden></p>
+      </fieldset>
+
+      <!-- Question 3: multiple choice -->
+      <fieldset class="question" id="box-q3">
+        <legend>
+          3. Which 1993 browser opened the Web to non-technical users by
+          embedding images directly in the text?
+        </legend>
+        <label
+          ><input type="radio" name="q3" value="edge" /> Microsoft Edge</label
+        >
+        <label
+          ><input type="radio" name="q3" value="navigator" /> Netscape
+          Navigator</label
+        >
+        <label
+          ><input type="radio" name="q3" value="mosaic" /> NCSA Mosaic</label
+        >
+        <label><input type="radio" name="q3" value="opera" /> Opera</label>
+        <p class="feedback" id="fb-q3" hidden></p>
+      </fieldset>
+
+      <!-- Question 4: multi-selection -->
+      <fieldset class="question" id="box-q4">
+        <legend>
+          4. Which of these are components of a web browser? Select all that
+          apply.
+        </legend>
+        <label
+          ><input type="checkbox" name="q4" value="rendering" /> Rendering
+          engine</label
+        >
+        <label
+          ><input type="checkbox" name="q4" value="registrar" /> Domain name
+          registrar</label
+        >
+        <label
+          ><input type="checkbox" name="q4" value="javascript" /> JavaScript
+          engine</label
+        >
+        <label
+          ><input type="checkbox" name="q4" value="networking" /> Networking
+          component</label
+        >
+        <label
+          ><input type="checkbox" name="q4" value="webserver" /> Web
+          server</label
+        >
+        <p class="feedback" id="fb-q4" hidden></p>
+      </fieldset>
+
+      <!-- Question 5: multiple choice -->
+      <fieldset class="question" id="box-q5">
+        <legend>
+          5. The first browser war (1995&ndash;2001) pitted Internet Explorer
+          against which rival?
+        </legend>
+        <label
+          ><input type="radio" name="q5" value="firefox" /> Mozilla
+          Firefox</label
+        >
+        <label
+          ><input type="radio" name="q5" value="chrome" /> Google Chrome</label
+        >
+        <label
+          ><input type="radio" name="q5" value="safari" /> Apple Safari</label
+        >
+        <label
+          ><input type="radio" name="q5" value="navigator" /> Netscape
+          Navigator</label
+        >
+        <p class="feedback" id="fb-q5" hidden></p>
+      </fieldset>
+
+      <!-- Question 6: fill in the blank -->
+      <fieldset class="question" id="box-q6">
+        <legend>
+          6. Tim Berners-Lee's first browser, WorldWideWeb, was later renamed
+          _______.
+        </legend>
+        <input
+          type="text"
+          id="q6"
+          autocomplete="off"
+          placeholder="Type your answer"
+        />
+        <p class="feedback" id="fb-q6" hidden></p>
+      </fieldset>
+
+      <!-- Question 7: multi-selection -->
+      <fieldset class="question" id="box-q7">
+        <legend>
+          7. Which capabilities do today's browsers commonly offer? Select all
+          that apply.
+        </legend>
+        <label
+          ><input type="checkbox" name="q7" value="bookmarks" /> Bookmarking
+          pages</label
+        >
+        <label
+          ><input type="checkbox" name="q7" value="extensions" />
+          Extensions</label
+        >
+        <label
+          ><input type="checkbox" name="q7" value="syncing" /> Syncing data
+          across devices</label
+        >
+        <label
+          ><input type="checkbox" name="q7" value="tabs" /> Tabbed
+          browsing</label
+        >
+        <label
+          ><input type="checkbox" name="q7" value="cpp" /> Compiling C++</label
+        >
+        <p class="feedback" id="fb-q7" hidden></p>
+      </fieldset>
+
+      <!-- Question 8: fill in the blank -->
+      <fieldset class="question" id="box-q8">
+        <legend>
+          8. By 2017, Chrome's worldwide market share had topped _______
+          percent.
+        </legend>
+        <input
+          type="text"
+          id="q8"
+          autocomplete="off"
+          placeholder="Type a number"
+        />
+        <p class="feedback" id="fb-q8" hidden></p>
+      </fieldset>
+
+      <!-- Question 9: fill in the blank -->
+      <fieldset class="question" id="box-q9">
+        <legend>
+          9. The _______ is the web address a user types to reach a specific
+          page.
+        </legend>
+        <input
+          type="text"
+          id="q9"
+          autocomplete="off"
+          placeholder="Type your answer"
+        />
+        <p class="feedback" id="fb-q9" hidden></p>
+      </fieldset>
+
+      <!-- Question 10: multiple choice -->
+      <fieldset class="question" id="box-q10">
+        <legend>
+          10. In the client-server model, the browser acts as the&hellip;
+        </legend>
+        <label><input type="radio" name="q10" value="client" /> Client</label>
+        <label><input type="radio" name="q10" value="server" /> Server</label>
+        <p class="feedback" id="fb-q10" hidden></p>
+      </fieldset>
+
+      <div class="actions">
+        <button type="submit" class="btn btn-check">Check my answers</button>
+        <button type="button" class="btn btn-retake" id="resetBtn">
+          Retake the quiz
+        </button>
+      </div>
+    </form>
 
     <!-- ===== Footer ===== -->
     <footer>

@@ -151,3 +151,124 @@ footer {
   text-indent: -2em;
   margin-bottom: 0.75rem;
 }
+
+/* QUIZ PAGE */
+/* Each question is a bordered card */
+.question {
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  border: 3px solid #189e93;
+  background-color: #fff;
+}
+ 
+.question legend {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #36399a;
+}
+
+/* One answer choice per line */
+.question label {
+  display: block;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.question input[type="radio"],
+.question input[type="checkbox"] {
+  accent-color: #ed008c;
+  margin-right: 0.4rem;
+}
+
+/* Fill-in-the-blank text box */
+.question input[type="text"] {
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #189e93;
+  font: inherit;
+}
+
+/* Green for correct, red for incorrect */
+.question.is-correct {
+  border-color: #0f7b3e;
+  background-color: #e7f4ec;
+}
+ 
+.question.is-incorrect {
+  border-color: #b3261e;
+  background-color: #fbeae9;
+}
+ 
+.feedback {
+  margin: 1rem 0 0 0;
+  padding-top: 0.75rem;
+  border-top: 1px solid #c9c6c0;
+  font-weight: bold;
+}
+ 
+.is-correct .feedback {
+  color: #0f7b3e;
+}
+ 
+.is-incorrect .feedback {
+  color: #b3261e;
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+ 
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: 3px solid #189e93;
+  font: inherit;
+  cursor: pointer;
+}
+ 
+.btn-check {
+  background-color: #ed008c;
+  color: #fff;
+}
+ 
+.btn-retake {
+  background-color: #189e93;
+  color: #fff;
+  border-color: #ed008c
+}
+ 
+.btn:hover,
+.btn:focus-visible {
+  background-color: #fee012;
+  color: #36399a;
+  font-weight: bold;
+}
+
+/* Final score */
+.scorecard {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 4px solid #189e93;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+ 
+.scorecard.pass {
+  border-color: #0f7b3e;
+  background-color: #e7f4ec;
+  color: #0f7b3e;
+}
+ 
+.scorecard.fail {
+  border-color: #b3261e;
+  background-color: #fbeae9;
+  color: #b3261e;
+}

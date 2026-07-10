@@ -142,7 +142,7 @@ function showScore(score) {
   }
  
   scorecard.textContent =
-    verdict + " \u2014 " + score + " / " + TOTAL + " points (" + percent + "%)";
+    verdict + "! \n" + score + " / " + TOTAL + " points (" + percent + "%)";
   scorecard.hidden = false;
 }
  

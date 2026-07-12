@@ -8,22 +8,24 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="home-page">
-    <!-- ===== Header and Main Menu ===== -->
+    <!-- ===== Header ===== -->
     <header>
       <h1><a href="index.html">The Evolution of Web Browsers</a></h1>
       <p class="subtitle">By Sophia Turkington</p>
-      <nav>
-        <ul>
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="browsers.html">How Browsers Work</a></li>
-          <li><a href="browserwars.html">Browser Wars</a></li>
-          <li><a href="concepts.html">Key Concepts</a></li>
-          <li><a href="references.html">References</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="quiz.html">Quiz</a></li>
-        </ul>
-      </nav>
     </header>
+
+    <!-- ===== Main Menu ===== -->
+    <nav>
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="browsers.html">How Browsers Work</a></li>
+        <li><a href="browserwars.html">Browser Wars</a></li>
+        <li><a href="concepts.html">Key Concepts</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
 
     <!-- ===== Page Content ===== -->
     <main>
@@ -44,69 +46,110 @@
       </p>
 
       <h2 class="section-title">Key Terms:</h2>
-      <p class="indent">
-        <strong>Browser Wars:</strong> the periods of commercial competition
-        (1995-2001 &amp; 2004-2017) between browser makers that reshaped which
-        browsers dominated and how web standards developed
-      </p>
-      <p class="indent">
-        <strong>Content Decryption Module (CDM):</strong> a component required
-        to play DRM-protected content from subscription-based services
-      </p>
-      <p class="indent">
-        <strong>Digital Rights Management (DRM):</strong> technology that
-        controls access to copyrighted content, requiring a browser to have the
-        right components to play protected media from services like Netflix and
-        Spotify
-      </p>
-      <p class="indent">
-        <strong>Extensions:</strong> small software programs users can install
-        to expand what a browser can do, such as blocking ads, managing
-        passwords, or adding new tools
-      </p>
-      <p class="indent">
-        <strong>HTTP/HTTPS:</strong> the communication protocols browsers use to
-        request and receive data, with HTTPS adding encryption
-      </p>
-      <p class="indent">
-        <strong>JavaScript engine:</strong> reads and executes JavaScript so
-        pages can update in response to user actions
-      </p>
-      <p class="indent">
-        <strong>Rendering Engine:</strong> the component that turns website code
-        into the visible page (ex: Blink, WebKit, Gecko)
-      </p>
-      <p class="indent">
-        <strong>User interface (UI):</strong> the parts users interact with
-        directly (ex: the address bar, navigation buttons, and tabs)
-      </p>
-      <p class="indent">
-        <strong>Uniform Resource Locator (URL):</strong> the web address a user
-        types into a browser to reach a specific page, which starts the process
-        of requesting that page from a web server
-      </p>
-      <p class="indent">
-        <strong>The Web:</strong> the collection of sites and content, while the
-        internet is the underlying network that carries it
-      </p>
-      <p class="indent">
-        <strong>Web client (browser):</strong> software that requests,
-        translates, and renders web data into a form users can read and interact
-        with
-      </p>
-      <p class="indent">
-        <strong>Web server:</strong> the program that responds to a browser's
-        requests by delivering the files that make up a web page
-      </p>
-      <p class="indent">
-        <strong>Web standards:</strong> shared specifications that keep websites
-        working consistently across different browsers
-      </p>
-      <p class="indent">
-        <strong>World Wide Web (WWW):</strong> the system of interlinked web
-        pages and documents that people access through browsers over the
-        internet
-      </p>
+      <table class="terms">
+        <tr>
+          <th>Browser Wars</th>
+          <td>
+            the periods of commercial competition (1995&ndash;2001 &amp;
+            2004&ndash;2017) between browser makers that reshaped which browsers
+            dominated and how web standards developed
+          </td>
+        </tr>
+        <tr>
+          <th>Content Decryption Module (CDM)</th>
+          <td>
+            a component required to play DRM-protected content from
+            subscription-based services
+          </td>
+        </tr>
+        <tr>
+          <th>Digital Rights Management (DRM)</th>
+          <td>
+            technology that controls access to copyrighted content, requiring a
+            browser to have the right components to play protected media from
+            services like Netflix and Spotify
+          </td>
+        </tr>
+        <tr>
+          <th>Extensions</th>
+          <td>
+            small software programs users can install to expand what a browser
+            can do, such as blocking ads, managing passwords, or adding new
+            tools
+          </td>
+        </tr>
+        <tr>
+          <th>HTTP/HTTPS</th>
+          <td>
+            the communication protocols browsers use to request and receive
+            data, with HTTPS adding encryption
+          </td>
+        </tr>
+        <tr>
+          <th>JavaScript engine</th>
+          <td>
+            reads and executes JavaScript so pages can update in response to
+            user actions
+          </td>
+        </tr>
+        <tr>
+          <th>Rendering Engine</th>
+          <td>
+            the component that turns website code into the visible page (ex:
+            Blink, WebKit, Gecko)
+          </td>
+        </tr>
+        <tr>
+          <th>User interface (UI)</th>
+          <td>
+            the parts users interact with directly (ex: the address bar,
+            navigation buttons, and tabs)
+          </td>
+        </tr>
+        <tr>
+          <th>Uniform Resource Locator (URL)</th>
+          <td>
+            the web address a user types into a browser to reach a specific
+            page, which starts the process of requesting that page from a web
+            server
+          </td>
+        </tr>
+        <tr>
+          <th>The Web</th>
+          <td>
+            the collection of sites and content, while the internet is the
+            underlying network that carries it
+          </td>
+        </tr>
+        <tr>
+          <th>Web client (browser)</th>
+          <td>
+            software that requests, translates, and renders web data into a form
+            users can read and interact with
+          </td>
+        </tr>
+        <tr>
+          <th>Web server</th>
+          <td>
+            the program that responds to a browser's requests by delivering the
+            files that make up a web page
+          </td>
+        </tr>
+        <tr>
+          <th>Web standards</th>
+          <td>
+            shared specifications that keep websites working consistently across
+            different browsers
+          </td>
+        </tr>
+        <tr>
+          <th>World Wide Web (WWW)</th>
+          <td>
+            the system of interlinked web pages and documents that people access
+            through browsers over the internet
+          </td>
+        </tr>
+      </table>
     </main>
 
     <!-- ===== Footer ===== -->

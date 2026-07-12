@@ -1,17 +1,24 @@
 /* Background color of entire website */
 body {
-  background-color: #faf0e6;
+  background-image: url('tech_background.jpg');
+
 }
 
 /* Customize title (appears on all pages) */
 header h1 {
   font-size: 1.25rem;
   text-align: left;
-  color: #36399a;
+  color: #041228;
   font-weight: bold;
-  margin-top: 0.5rem;
+  margin: 1.25rem;
   text-decoration: underline;
-  padding: 0px 10px;
+  padding: 10px 16px;
+  background-color: #efefef;
+  border-radius: 15px;
+  border: 5px solid #19427D;
+  width: fit-content;
+  height: auto;
+  margin: 0 0;
 }
 
 /* The title is a link (navigates back to home page when clicked), but maintain its appearance as a heading. */
@@ -21,33 +28,51 @@ header h1 a {
 
 /* Customize subtitle (appears on all pages) */
 .subtitle {
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
-  color: #5c60d4;
+  color: #2f2a60;
   font-weight: bold;
-  margin-top: 1.25rem;
-  margin-bottom: 1rem;
   text-decoration: none;
-
+  padding: 10px 16px;
+  background-color: #efefef;
+  border-radius: 15px;
+  border: 5px solid #19427D;
+  width: fit-content;
+  height: auto;
+  margin: 1.25rem auto;
 }
 
 /* EXCEPTIONS: The home page title and subtitle are different than the rest of the pages.*/
 .home-page header h1 {
   font-size: 3rem;
   text-align: center;
-  padding: 0;
-  margin-top: 30px;
+  margin: 1.25rem auto;
+  padding: 10px 16px;
+  background-color: #efefef;
+  border-radius: 15px;
+  border: 5px solid #2f2a60;
+  width: fit-content;
+  height: auto;
 }
 
 .home-page .subtitle {
   font-size: 1.6rem;
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 1.25rem auto;
+  width: fit-content;
+  height: auto;
 }
 
 /* Configure the menu row & flex display */
 nav {
   padding: 10px 16px;
+  background-color: #c9c6c0;
+  position: sticky;
+  top: 0;
+  border-radius: 15px;
+  width: auto;
+  height: auto;
+  padding: 10px 16px;
+  border: 5px solid #456a9d;
 }
 
 nav ul {
@@ -67,34 +92,41 @@ nav a {
   justify-content: center;
   text-align: center;
   padding: 10px 16px;
-  border: 3px solid #189e93;
+  border: 3px solid #706f6f;
   text-decoration: none;
-  color: #fff;
-  background-color: #ed008c;
+  color: #000000;
+  background-color: #afd4fd;
+  border-radius: 15px;
+  width: auto;
+  height: auto;
 }
 
 /* Hover requirement for menu */
 nav a:hover,
 nav a:focus-visible {
-  color: #36399a;
-  background-color: #fee012;
+  color: #ffffff;
+  background-color: #706f6f;
 }
 
 /* Hover colors indicate what page the user is currently on */
 nav a[aria-current="page"] {
-  color: #36399a;
-  background-color: #fee012;
+  color: #ffffff;
+  background-color: #706f6f;
   font-weight: bold;
-  border: 3px solid #ed008c;
+  border: 3px solid #afd4fd;
 }
 
 /* Adjust the margin of the main body text on pages */
 main {
+  margin: 2rem auto;
   max-width: 900px;
-  margin: 0 auto;
-  padding-left: 2rem;
-  padding-right: 3.5rem;
-  padding-top: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #fff;
+  border: 5px solid #706f6f;
+  border-radius: 15px;
 }
 
 /* Section headings within the page content */
@@ -135,10 +167,15 @@ main > .section-title:first-child {
 
 /* Customize footer */
 footer {
+  margin: 1.25rem auto;
   text-align: center;
-  font-size: 0.85rem;
-  color: #4b4b4b;
-  padding: 10px 16px;
+  font-size: 1rem;
+  color: #041228;
+  background-color: #c9c6c0;
+  border-radius: 15px;
+  border: 3px solid #706f6f;
+  width: auto;
+  height: auto;
 }
 
 /* Configure APA-style reference list */
@@ -153,12 +190,26 @@ footer {
 }
 
 /* QUIZ PAGE */
+/* Adjust section title and body text. */
+.quiz-page .section-title {
+  font-size: 1.4rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+  text-align: center;
+}
+.quiz-page .body-text {
+  text-indent: 0;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
 /* Each question contained in a bordered box */
 .question {
   margin-bottom: 1.25rem;
   padding: 1.25rem;
-  border: 3px solid #189e93;
-  background-color: #fff;
+  border: 2px solid #3d5169;
+  background-color: #f6f1e6;
 }
  
 .question legend {
@@ -179,7 +230,7 @@ footer {
 
 .question input[type="radio"],
 .question input[type="checkbox"] {
-  accent-color: #ed008c;
+  accent-color: #9e9065;
   margin-right: 0.4rem;
 }
 
@@ -189,8 +240,14 @@ footer {
   padding: 0.5rem;
   width: 100%;
   max-width: 300px;
-  border: 2px solid #189e93;
+  border: 2px solid #7598c1;
   font: inherit;
+  border-radius: 15px;
+}
+
+.question input[type="text"]:focus {
+  outline:none;
+  border-color:#9e9065;
 }
 
 /* Green for correct, red for incorrect */
@@ -228,29 +285,21 @@ footer {
   text-align: center;
   gap: 0.75rem;
   margin-top: 1.5rem;
+  font-size: 1.5rem;
 }
  
 .btn {
   padding: 0.75rem 1.5rem;
-  border: 3px solid #189e93;
   font: inherit;
   cursor: pointer;
-}
- 
-.btn-check {
-  background-color: #ed008c;
-  color: #fff;
-}
- 
-.btn-retake {
-  background-color: #189e93;
-  color: #fff;
-  border-color: #ed008c
+  border-color: #c5b78a;
+  color: #3d5169;
+  background-color: #d0e3f9;
 }
  
 .btn:hover,
 .btn:focus-visible {
-  background-color: #fee012;
+  background-color: #c5b78a;
   color: #36399a;
   font-weight: bold;
 }
@@ -276,4 +325,48 @@ footer {
   border-color: #b3261e;
   background-color: #fbeae9;
   color: #b3261e;
+}
+
+/* Key Terms table on home page */
+.terms {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem auto;
+  margin-top: 1.5em;
+  margin-left: 0.3em;
+}
+
+.terms th,
+.terms td {
+  border: 1.5px solid #c5b78a;
+  padding: 0.5rem 0.5rem;
+  text-align: left;
+  vertical-align: top;
+  background-color: #f8f6f0;
+  color: #2f4056
+}
+
+.terms th {
+  width: 30%;
+  color: #2b4191;
+  background-color:#efebe3;
+}
+
+/* Key Concepts table */
+.concepts-page .terms {
+  margin: 0.5rem auto;
+}
+
+.concepts-page .terms dt {
+  font-weight: bold;
+  color: #36399a;
+  font-size: 1.15rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1.5px solid #c9c6c0;
+}
+
+.concepts-page .terms dd {
+  margin: 0.5rem 0 2rem 1.5em;
+  line-height: 1.5;
+  margin-top: 0.25rem;
 }

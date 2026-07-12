@@ -19,6 +19,7 @@ header h1 {
   width: fit-content;
   height: auto;
   margin: 0 0;
+  font-family: 'Pixelify Sans', serif;
 }
 
 /* The title is a link (navigates back to home page when clicked), but maintain its appearance as a heading. */
@@ -40,6 +41,7 @@ header h1 a {
   width: fit-content;
   height: auto;
   margin: 1.25rem auto;
+  font-family: 'Lora', serif;
 }
 
 /* EXCEPTIONS: The home page title and subtitle are different than the rest of the pages.*/
@@ -53,6 +55,7 @@ header h1 a {
   border: 5px solid #2f2a60;
   width: fit-content;
   height: auto;
+  font-family: 'Pixelify Sans', serif;
 }
 
 .home-page .subtitle {
@@ -60,6 +63,7 @@ header h1 a {
   margin: 1.25rem auto;
   width: fit-content;
   height: auto;
+  font-family: 'Lora', serif;
 }
 
 /* Configure the menu row & flex display */
@@ -99,6 +103,7 @@ nav a {
   border-radius: 15px;
   width: auto;
   height: auto;
+  font-family: 'Georgia', serif
 }
 
 /* Hover requirement for menu */
@@ -118,15 +123,16 @@ nav a[aria-current="page"] {
 
 /* Adjust the margin of the main body text on pages */
 main {
-  margin: 2rem auto;
+  margin: 1.5rem auto;
   max-width: 900px;
   padding-left: 1.5rem;
-  padding-right: 2rem;
-  padding-top: 1rem;
+  padding-right: 2.7rem;
+  padding-top: 1.5rem;
   padding-bottom: 1rem;
   background-color: #fff;
   border: 5px solid #706f6f;
   border-radius: 15px;
+  font-family: 'Georgia', serif
 }
 
 /* Section headings within the page content */
@@ -169,13 +175,15 @@ main > .section-title:first-child {
 footer {
   margin: 1.25rem auto;
   text-align: center;
-  font-size: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
   color: #041228;
   background-color: #c9c6c0;
   border-radius: 15px;
   border: 3px solid #706f6f;
   width: auto;
   height: auto;
+  font-family: 'Courier New', Courier, monospace
 }
 
 /* Configure APA-style reference list */

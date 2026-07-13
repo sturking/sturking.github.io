@@ -161,8 +161,9 @@ function resetQuiz() {
     input.disabled = false;
   }
 
+/* Re-enable the check button, so the quiz can be graded again. */ 
   document.querySelector(".btn-check").disabled = false;
-  
+
   form.reset();
  
   for (const question of quizData) {

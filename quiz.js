@@ -161,6 +161,8 @@ function resetQuiz() {
     input.disabled = false;
   }
 
+  document.querySelector(".btn-check").disabled = false;
+  
   form.reset();
  
   for (const question of quizData) {

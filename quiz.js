@@ -40,7 +40,7 @@ form.addEventListener("submit", function (event) {
  
 /* Clear the inputs and the results. Passing resetQuiz without parentheses hands over the function to call later, rather than calling it now. */
 document.getElementById("resetBtn").addEventListener("click", resetQuiz);
- 
+
 /* Returns true if the array holds this value. Called from isCorrect() for both text and checkbox questions. */
 function contains(list, value) {
   for (const item of list) {
@@ -124,9 +124,16 @@ function gradeQuiz() {
     feedback.textContent =
       mark + " \n " + points + " / " + POINTS + " points\nAnswer: " + question.answer;
     feedback.hidden = false;
-  }
- 
+   }
+
   showScore(score);
+
+  /* Lock the answers so they can't be changed after grading. */
+  const inputs = form.querySelectorAll("input");
+  for (const input of inputs) {
+    input.disabled = true;
+  }
+  document.querySelector(".btn-check").disabled = true;  
 }
  
 /* Display the pass/fail verdict and the final score. */
@@ -148,6 +155,12 @@ function showScore(score) {
  
 /* Clear the answers and the results, so the quiz can be retaken. */
 function resetQuiz() {
+  /* Re-enable the inputs first, or reset() can't clear a disabled field. */
+  const inputs = form.querySelectorAll("input");
+  for (const input of inputs) {
+    input.disabled = false;
+  }
+
   form.reset();
  
   for (const question of quizData) {

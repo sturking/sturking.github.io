@@ -8,18 +8,19 @@ body {
 header h1 {
   font-size: 1.25rem;
   text-align: left;
-  color: #041228;
   font-weight: bold;
   margin: 1.25rem;
   text-decoration: underline;
   padding: 10px 16px;
-  background-color: #efefef;
+  background-color: #bfbacd;
   border-radius: 15px;
-  border: 5px solid #19427D;
+  border: 5px groove #19427D;
   width: fit-content;
   height: auto;
   margin: 0 0;
   font-family: 'Pixelify Sans', serif;
+  color: white;
+  text-shadow: 4px 3px 5px black, 0 0 30px rgba(47, 47, 167, 0.615), 0 0 30px rgb(3, 16, 41);
 }
 
 /* The title is a link (navigates back to home page when clicked), but maintain its appearance as a heading. */
@@ -31,13 +32,12 @@ header h1 a {
 .subtitle {
   font-size: 3rem;
   text-align: center;
-  color: #2f2a60;
   font-weight: bold;
   text-decoration: none;
   padding: 10px 16px;
   background-color: #efefef;
   border-radius: 15px;
-  border: 5px solid #19427D;
+  border: 5px double #19427D;
   width: fit-content;
   height: auto;
   margin: 1.25rem auto;
@@ -46,16 +46,18 @@ header h1 a {
 
 /* EXCEPTIONS: The home page title and subtitle are different than the rest of the pages.*/
 .home-page header h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-align: center;
   margin: 1.25rem auto;
   padding: 10px 16px;
-  background-color: #efefef;
+  background-color: #bfbacd;
   border-radius: 15px;
-  border: 5px solid #2f2a60;
+  border: 5px groove #2f2a60;
   width: fit-content;
   height: auto;
   font-family: 'Pixelify Sans', serif;
+  color: white;
+  text-shadow: 4px 3px 5px black, 0 0 30px rgba(91, 91, 255, 0.615), 0 0 30px rgb(3, 16, 41);
 }
 
 .home-page .subtitle {
@@ -68,15 +70,14 @@ header h1 a {
 
 /* Configure the menu row & flex display */
 nav {
-  padding: 10px 16px;
+  padding: 1.5rem 16px;
   background-color: #c9c6c0;
   position: sticky;
   top: 0;
   border-radius: 15px;
   width: auto;
   height: auto;
-  padding: 10px 16px;
-  border: 5px solid #456a9d;
+  border: 6px ridge #456a9d;
 }
 
 nav ul {
@@ -89,6 +90,14 @@ nav ul {
   padding: 0;
 }
 
+nav h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: 'Georgia', serif
+}
+
 /* Customize menu layout */
 nav a {
   display: flex;
@@ -96,7 +105,7 @@ nav a {
   justify-content: center;
   text-align: center;
   padding: 10px 16px;
-  border: 3px solid #706f6f;
+  border: 3px outset #706f6f;
   text-decoration: none;
   color: #000000;
   background-color: #afd4fd;
@@ -118,7 +127,7 @@ nav a[aria-current="page"] {
   color: #ffffff;
   background-color: #706f6f;
   font-weight: bold;
-  border: 3px solid #afd4fd;
+  border: 3px inset #afd4fd;
 }
 
 /* Adjust the margin of the main body text on pages */
@@ -130,7 +139,7 @@ main {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
   background-color: #fff;
-  border: 5px solid #706f6f;
+  border: 3px dashed #706f6f;
   border-radius: 15px;
   font-family: 'Georgia', serif
 }
@@ -141,6 +150,7 @@ main {
   margin-top: 1.75rem;
   margin-bottom: 0.5rem;
   text-decoration: underline;
+  text-decoration-style: wavy;
 }
 
 /* Section headings that are bold only, with no underline */
@@ -180,7 +190,7 @@ footer {
   color: #041228;
   background-color: #c9c6c0;
   border-radius: 15px;
-  border: 3px solid #706f6f;
+  border: 3.5px ridge #706f6f;
   width: auto;
   height: auto;
   font-family: 'Courier New', Courier, monospace
@@ -321,18 +331,22 @@ footer {
   font-size: 1.5rem;
   font-weight: bold;
   white-space: pre-line; 
+  border-radius: 15px;
+  border: 5px groove;
+  width: auto;
+  height: auto;
 }
  
 .scorecard.pass {
-  border-color: #0f7b3e;
-  background-color: #e7f4ec;
-  color: #0f7b3e;
+  border-color: #00c455;
+  background-color: #d5fbe3;
+  color: #066730;
 }
  
 .scorecard.fail {
-  border-color: #b3261e;
-  background-color: #fbeae9;
-  color: #b3261e;
+  border-color: #ff0d00;
+  background-color: #fac7c4;
+  color: #ae0b02;
 }
 
 /* Key Terms table on home page */
@@ -377,4 +391,56 @@ footer {
   margin: 0.5rem 0 2rem 1.5em;
   line-height: 1.5;
   margin-top: 0.25rem;
+}
+
+/* Images */
+.with-image {
+  display: flex;
+  gap: 1rem;
+}
+
+.term-img {
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+/* Per-image overrides */
+.img-clientserver {height: 300px; }
+.img-networkingcomps {width: 300px; }
+.img-browswersecurity {height: 300px; }
+.img-mosaiclogo {height: 300px; }
+.img-PopularBrowsers {
+  width: 500px;
+  max-width: 100%;
+  display: block;
+  margin: 1rem auto; 
+}
+.img-BW1 {
+  width: 500px;
+  max-width: 100%;
+  display: block;
+  margin: 1rem auto; 
+}
+.img-BW2 { 
+  width: 500px;
+  max-width: 100%;
+  display: block;
+  margin: 1rem auto; 
+}
+.img-KSU {
+  height: 90px; 
+  padding-bottom: 1rem;
+}
+.img-shield {height: 140px;
+  margin: 1rem auto;
+  padding-left: 1rem;
+  padding-right: -1rem;
+}
+
+.img-browsing {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 100%;
 }

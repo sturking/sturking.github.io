@@ -1,4 +1,4 @@
-/* Use border-box sizing everywhereso padding and border count as part of an element's width. Keeps fixed-size controls and images from overflowing on small (mobile) screens. */
+/* Use border-box sizing everywhere so padding and border count as part of an element's width. Keeps fixed-size controls and images from overflowing on small (mobile) screens. */
 *,
 *::before,
 *::after {
@@ -29,7 +29,7 @@ header h1 {
   border: 5px groove #19427D;
   width: fit-content;
   height: auto;
-  margin: 0 0;
+  margin: 0;
   font-family: 'Pixelify Sans', serif;
   color: white;
   text-shadow: 4px 3px 5px black, 0 0 30px rgba(47, 47, 167, 0.615), 0 0 30px rgb(3, 16, 41);
@@ -161,10 +161,7 @@ nav a[aria-current="page"] {
 main {
   margin: 1.5rem auto;
   max-width: 900px;
-  padding-left: 1.5rem;
-  padding-right: 2.7rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
+  padding: 2rem;
   background-color: #fff;
   border: 3px dashed #706f6f;
   border-radius: 15px;
@@ -201,10 +198,10 @@ main > .section-title:first-child {
   margin-bottom: 1rem;
 }
 
-/* Body paragraphs: left margin plus a first-line indent */
+/* Indent first-line of body paragraphs. */
 .body-text {
   margin-top: 0;
-  margin-left: 1.5em;
+  margin-left: 0;
   text-indent: 2.5em;
 }
 
@@ -393,7 +390,7 @@ footer {
 .terms {
   border-collapse: collapse;
   width: 100%;
-  margin: 1.5em auto 1rem 0.3em;
+  margin: 1.5em auto 1rem;
 }
 
 .terms th,
@@ -426,9 +423,8 @@ footer {
 }
 
 .concepts-page .terms dd {
-  margin: 0.5rem 0 2rem 1.5em;
+  margin: 0.5rem 0.75em 2rem 0.75em;
   line-height: 1.5;
-  margin-top: 0.25rem;
 }
 
 /* 
@@ -451,10 +447,10 @@ footer {
 }
 
 /* Per-image overrides */
-.img-clientserver {height: 300px; }
-.img-networkingcomps {width: 300px; }
-.img-browswersecurity {height: 300px; }
-.img-mosaiclogo {height: 300px; }
+.img-clientserver {max-height: 300px; }
+.img-networkingcomps {max-width: 300px; }
+.img-browsersecurity {max-height: 300px; }
+.img-mosaiclogo {max-height: 300px; }
 .img-PopularBrowsers {
   width: 500px;
   display: block;
@@ -471,12 +467,12 @@ footer {
   margin: 1rem auto; 
 }
 .img-KSU {
-  height: 90px; 
+  max-height: 90px; 
   padding-bottom: 1rem;
 }
-.img-shield {height: 140px;
+.img-shield {
+  max-height: 140px;
   margin: 1rem auto;
-  padding-left: 1rem;
 }
 
 .img-browsing {
@@ -505,7 +501,7 @@ footer {
   padding: 8px 14px;
   cursor: pointer;
   color: #000000;
-  background-color: #afd4fd;
+  background-color: #d0e3f9;
   border: 3px outset #706f6f;
   border-radius: 15px;
 }
@@ -516,8 +512,14 @@ footer {
   color: #ffffff;
   background-color: #706f6f;
 }
- 
-/* Caret faces down while closed tto hint the menu expands downward. */
+
+/* Keep the navicon in its active style while the menu is open. */
+.nav-toggle-checkbox:checked ~ .nav-toggle {
+  background-color: #706f6f;
+  color: #ffffff;
+}
+
+/* Caret faces down while closed to hint the menu expands downward. */
 .nav-toggle::after {
   content: "\25BE";
   font-size: 1.5rem;
@@ -593,15 +595,12 @@ footer {
     padding: 14px 16px;
   }
  
-  /* Put the image and text in a single, centered column instead of side by side. Remove the body text's left margin since it's no longer needed. 
+  /* Put the image and text in a single, centered column instead of side by side.
   (RWD BEST PRACTICE: Single-Column Layout on Small Screens) */
   .with-image {
     flex-direction: column;
     align-items: center;
     gap: 0.75rem;
-  }
-  .with-image .body-text {
-    margin-left: 0;
   }
  
   /* Make the content images flexible. Remove the fixed pixel dimensions and let each image resize to fit the column, staying centered and keeping its proportions.
@@ -649,19 +648,19 @@ footer {
     padding: 0.85rem 0.85rem 0.6rem;
   }
  
-  /* Make the home title a bit smaller. In body paragraphs, take off the wide left margin and deep first-line indent so there's more horizontal room. */
+  /* Make the home title slightly smaller, and reduce the body paragraphs' first-line indent for more horizontal room. */
   .home-page header h1 {
     font-size: 1.6rem;
   }
-  .subtitle {
+  .subtitle,
+  .home-page .subtitle {
     font-size: 1.35rem;
   }
   .body-text {
-    margin-left: 0;
     text-indent: 1.25em;
   }
  
-  /* Make tables responsive. stack each term and its definition into full-width
+  /* Make tables responsive. Stack each term and its definition into full-width
    blocks so they're readable on a narrow screen, keeping each term joined
    to its definition below. 
    (RWD BEST PRACTICE: Media Queries for Responsive Tables) */
@@ -701,5 +700,4 @@ footer {
   .question {
     padding: 1rem;
   }
-
 }

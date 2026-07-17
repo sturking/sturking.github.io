@@ -607,7 +607,7 @@ footer {
   (RWD BEST PRACTICE: Adaptive Images) */
   .img-clientserver,
   .img-networkingcomps,
-  .img-browswersecurity,
+  .img-browsersecurity,
   .img-mosaiclogo,
   .img-PopularBrowsers,
   .img-BW1,
@@ -677,11 +677,6 @@ footer {
   }
   .terms td {
     margin-bottom: 0.75rem;
-  }
- 
-  /* Remove the Key Concepts list's left indent, which wastes width on a phone. */
-  .concepts-page .terms dd {
-    margin-left: 0;
   }
  
   /* For the quiz, make the action buttons and text inputs full width so they're easy to

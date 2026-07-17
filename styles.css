@@ -1,15 +1,27 @@
+/* Use border-box sizing everywhereso padding and border count as part of an element's width. Keeps fixed-size controls and images from overflowing on small (mobile) screens. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Background color of entire website */
 body {
   background-image: url('tech_background.jpg');
 
 }
 
-/* Customize title (appears on all pages) */
+
+/* 
+=============================================================
+  TITLE & SUBTITLE STYLING FOR ALL PAGES (EXCEPT HOME PAGE)
+=============================================================
+*/ 
+/* Customize title */
 header h1 {
   font-size: 1.25rem;
   text-align: left;
   font-weight: bold;
-  margin: 1.25rem;
   text-decoration: underline;
   padding: 10px 16px;
   background-color: #bfbacd;
@@ -28,7 +40,7 @@ header h1 a {
   color: inherit;
 }
 
-/* Customize subtitle (appears on all pages) */
+/* Customize subtitle */
 .subtitle {
   font-size: 3rem;
   text-align: center;
@@ -44,7 +56,12 @@ header h1 a {
   font-family: 'Lora', serif;
 }
 
-/* EXCEPTIONS: The home page title and subtitle are different than the rest of the pages.*/
+/* 
+==========================================
+  TITLE & SUBTITLE STYLING FOR HOME PAGE 
+==========================================
+*/ 
+/* The home page title and subtitle are different than the rest of the pages.*/
 .home-page header h1 {
   font-size: 3.5rem;
   text-align: center;
@@ -68,6 +85,11 @@ header h1 a {
   font-family: 'Lora', serif;
 }
 
+/* 
+=========================================
+  MAIN MENU CONFIGURATION FOR ALL PAGES
+=========================================
+*/ 
 /* Configure the menu row & flex display */
 nav {
   padding: 1.5rem 16px;
@@ -130,6 +152,11 @@ nav a[aria-current="page"] {
   border: 3px inset #afd4fd;
 }
 
+/* 
+====================================================================================
+  SECTION TITLE & BODY TEXT INDENTATION, MARGINS, & TEXT DECORATIONS FOR ALL PAGES
+====================================================================================
+*/ 
 /* Adjust the margin of the main body text on pages */
 main {
   margin: 1.5rem auto;
@@ -181,6 +208,22 @@ main > .section-title:first-child {
   text-indent: 2.5em;
 }
 
+/* Configure APA-style reference list */
+.references {
+  list-style: none;
+  padding-left: 1em;
+}
+.references li {
+  padding-left: 2em;
+  text-indent: -2em;
+  margin-bottom: 0.75rem;
+}
+
+/* 
+==========
+  FOOTER
+==========
+*/ 
 /* Customize footer */
 footer {
   margin: 1.25rem auto;
@@ -196,18 +239,11 @@ footer {
   font-family: 'Courier New', Courier, monospace
 }
 
-/* Configure APA-style reference list */
-.references {
-  list-style: none;
-  padding-left: 1em;
-}
-.references li {
-  padding-left: 2em;
-  text-indent: -2em;
-  margin-bottom: 0.75rem;
-}
-
-/* QUIZ PAGE */
+/* 
+=============
+  QUIZ PAGE
+=============
+*/ 
 /* Adjust section title and body text. */
 .quiz-page .section-title {
   font-size: 1.4rem;
@@ -326,13 +362,12 @@ footer {
 .scorecard {
   margin-top: 2rem;
   padding: 1.5rem;
-  border: 4px solid #189e93;
+  border: 5px groove #189e93;
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
   white-space: pre-line; 
   border-radius: 15px;
-  border: 5px groove;
   width: auto;
   height: auto;
 }
@@ -349,13 +384,16 @@ footer {
   color: #ae0b02;
 }
 
-/* Key Terms table on home page */
+/* 
+==========
+  TABLES
+==========
+*/ 
+/* Key Terms table (on Home page) */
 .terms {
   border-collapse: collapse;
   width: 100%;
-  margin: 1rem auto;
-  margin-top: 1.5em;
-  margin-left: 0.3em;
+  margin: 1.5em auto 1rem 0.3em;
 }
 
 .terms th,
@@ -374,7 +412,7 @@ footer {
   background-color:#efebe3;
 }
 
-/* Key Concepts table */
+/* Concepts table (on key concepts page) */
 .concepts-page .terms {
   margin: 0.5rem auto;
 }
@@ -393,7 +431,12 @@ footer {
   margin-top: 0.25rem;
 }
 
-/* Images */
+/* 
+==========
+  IMAGES
+==========
+*/ 
+/* General image configuration. */
 .with-image {
   display: flex;
   gap: 1rem;
@@ -404,6 +447,7 @@ footer {
   height: auto;
   flex-shrink: 0;
   border-radius: 8px;
+  max-width: 100%;
 }
 
 /* Per-image overrides */
@@ -413,19 +457,16 @@ footer {
 .img-mosaiclogo {height: 300px; }
 .img-PopularBrowsers {
   width: 500px;
-  max-width: 100%;
   display: block;
   margin: 1rem auto; 
 }
 .img-BW1 {
   width: 500px;
-  max-width: 100%;
   display: block;
   margin: 1rem auto; 
 }
 .img-BW2 { 
   width: 500px;
-  max-width: 100%;
   display: block;
   margin: 1rem auto; 
 }
@@ -436,11 +477,229 @@ footer {
 .img-shield {height: 140px;
   margin: 1rem auto;
   padding-left: 1rem;
-  padding-right: -1rem;
 }
 
 .img-browsing {
   display: block;
   margin: 1.5rem auto;
   max-width: 100%;
+}
+
+
+/* 
+======================================
+  NAVICON FOR THE MOBILE MENU TOGGLE
+======================================
+*/
+/* This checkbox stays hidden. It only remembers whether the menu is open. */
+.nav-toggle-checkbox {
+  display: none;
+}
+
+/* Configure the navicon toggle button. It stays hidden until the mobile breakpoint. */
+.nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 8px 14px;
+  cursor: pointer;
+  color: #000000;
+  background-color: #afd4fd;
+  border: 3px outset #706f6f;
+  border-radius: 15px;
+}
+
+/* The menu icon changes when you hover over it or focus it. */
+.nav-toggle:hover,
+.nav-toggle:focus-visible {
+  color: #ffffff;
+  background-color: #706f6f;
+}
+ 
+/* Caret faces down while closed tto hint the menu expands downward. */
+.nav-toggle::after {
+  content: "\25BE";
+  font-size: 1.5rem;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+/* Flip the caret to point up when the menu is open. */
+.nav-toggle-checkbox:checked ~ .nav-toggle::after {
+  transform: rotate(180deg);
+}
+
+/* 
+================================================
+  RESPONSIVE WEB & MOBILE DESIGN CONFIGURATION
+================================================
+*/
+/* TABLET SCREEN DISPLAY STYLE: Set breakpoint and max width, which lets <main> take up the full screen width on tablets and smaller devices. 
+(RWD BEST PRACTICE: Fluid Layout & Identifying Media Query Breakpoints) */
+@media (max-width: 768px) {
+  main {
+    margin: 1rem 0.75rem;
+    padding: 1rem 1rem 0.75rem;
+    max-width: 100%;
+  }
+  
+
+  /* Scale down the oversized home-page title and section subtitle to ensure the text fits on a narrow screen without overflowing. */
+  .home-page header h1 {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1.6rem;
+  }
+
+  /* Responsive menu configuration. A <label> tied to a hidden checkbox toggles the menu. On small screens "Main Menu" sits beside the navicon, and the menu opens below it.
+  (RWD BEST PRACTICE: Main Menu Toggle Pattern and Navicon) */
+  nav {
+    position: static;
+    padding: 0.85rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  /* "Main Menu" heading sits inline next to the navicon (home page only). */
+  .toc-title {
+    margin: 0;
+    order: 0;
+  }
+  /* Show the navicon on mobile, next to "Main Menu" and first in the row. */
+  .nav-toggle {
+    display: flex;
+    margin: 0;
+    order: -1;
+  }
+
+  /* Menu is collapsed by default. Checking the hidden checkbox (via the navicon label) reveals the menu as a full-width stacked column on its own row below. Links go full width with padding for bigger tap targets. */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0;
+    flex-basis: 100%;
+  }
+  .nav-toggle-checkbox:checked ~ ul {
+    display: flex;
+  }
+  nav a {
+    width: 100%;
+    padding: 14px 16px;
+  }
+ 
+  /* Put the image and text in a single, centered column instead of side by side. Remove the body text's left margin since it's no longer needed. 
+  (RWD BEST PRACTICE: Single-Column Layout on Small Screens) */
+  .with-image {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .with-image .body-text {
+    margin-left: 0;
+  }
+ 
+  /* Make the content images flexible. Remove the fixed pixel dimensions and let each image resize to fit the column, staying centered and keeping its proportions.
+  (RWD BEST PRACTICE: Adaptive Images) */
+  .img-clientserver,
+  .img-networkingcomps,
+  .img-browswersecurity,
+  .img-mosaiclogo,
+  .img-PopularBrowsers,
+  .img-BW1,
+  .img-BW2,
+  .img-browsing,
+  .img-shield,
+  .img-KSU {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 1rem auto;
+    padding: 0;
+  }
+ 
+  /* Style the form controls to be touch-friendly. Make each quiz answer a big, tappable
+   button instead of a small radio or checkbox. Highlight the selected one,
+   and keep the native control visible for older browsers.
+   (RWD BEST PRACTICE: Touch-Oriented Input Form Controls) */
+  .question label {
+    margin-top: 0.6rem;
+    padding: 12px 14px;
+    border: 2px solid #7598c1;
+    border-radius: 12px;
+    background-color: #eef4fb;
+  }
+  .question label:has(input:checked) {
+    border-color: #36399a;
+    background-color: #d0e3f9;
+    font-weight: bold;
+  }
+}
+ 
+/* PHONE SCREEN DISPLAY STYLE: Set breakpoint and max width, which lets <main> take up the full screen width on mobile devices. */
+@media (max-width: 480px) {
+  main {
+    margin: 0.75rem 0.5rem;
+    padding: 0.85rem 0.85rem 0.6rem;
+  }
+ 
+  /* Make the home title a bit smaller. In body paragraphs, take off the wide left margin and deep first-line indent so there's more horizontal room. */
+  .home-page header h1 {
+    font-size: 1.6rem;
+  }
+  .subtitle {
+    font-size: 1.35rem;
+  }
+  .body-text {
+    margin-left: 0;
+    text-indent: 1.25em;
+  }
+ 
+  /* Make tables responsive. stack each term and its definition into full-width
+   blocks so they're readable on a narrow screen, keeping each term joined
+   to its definition below. 
+   (RWD BEST PRACTICE: Media Queries for Responsive Tables) */
+  .terms,
+  .terms tbody,
+  .terms tr,
+  .terms th,
+  .terms td {
+    display: block;
+    width: 100%;
+  }
+  .terms th {
+    border-bottom: none;
+  }
+  .terms td {
+    margin-bottom: 0.75rem;
+  }
+ 
+  /* Remove the Key Concepts list's left indent, which wastes width on a phone. */
+  .concepts-page .terms dd {
+    margin-left: 0;
+  }
+ 
+  /* For the quiz, make the action buttons and text inputs full width so they're easy to
+     tap on a small screen. */
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 1.2rem;
+  }
+  .btn {
+    width: 100%;
+  }
+  .question input[type="text"] {
+    max-width: 100%;
+  }
+  .question {
+    padding: 1rem;
+  }
+
 }

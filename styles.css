@@ -211,6 +211,14 @@ main > .section-title:first-child {
   padding-left: 2em;
   text-indent: -2em;
   margin-bottom: 0.75rem;
+  overflow-wrap: break-word;
+}
+
+/* Display the Learning Resources section as a simple bulleted list. */
+.learning li {
+  margin-bottom: 0.75rem;
+  overflow-wrap: break-word;
+  padding-left: 0.5em;
 }
 
 /* 

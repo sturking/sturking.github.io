@@ -525,7 +525,7 @@ footer {
   border-radius: 15px;
 }
 
-/* The menu icon changes when you hover over it or focus it.
+/* The menu icon changes when you hover over it or focus it. 
 .nav-toggle:hover,
 .nav-toggle:focus-visible {
   color: #ffffff;
@@ -533,12 +533,22 @@ footer {
 }
 */
 
-/* Show the hover color only for mouse users. This stops the hover style from sticking after a tap on touch screens*/
+/* Show the hover color only for mouse users. This stops the hover style from sticking after a tap on touch screens. */
 @media (hover: hover) {
   .nav-toggle:hover {
     color: #ffffff;
     background-color: #706f6f;
   }
+}
+
+/* Reset the color after a tap. Only keyboard focus should highlight the navicon. */
+.nav-toggle:focus {
+  color: #000000;
+  background-color: #d0e3f9;
+}
+.nav-toggle:focus-visible {
+  color: #ffffff;
+  background-color: #706f6f;
 }
 
 /* Keyboard focus still highlights the navicon on all devices. */

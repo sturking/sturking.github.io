@@ -24,7 +24,7 @@ body {
 */ 
 /* Customize title */
 header h1 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-align: left;
   font-weight: bold;
   text-decoration: underline;
@@ -583,13 +583,13 @@ footer {
   
   /* Scale down the oversized home-page title and section subtitle to ensure the text fits on a narrow screen without overflowing. */
   .home-page header h1 {
-    font-size: 2.2rem;
+    font-size: 2.7rem;
   }
   .home-page .subtitle {
     font-size: 1.15rem;
   }
   header h1 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
   .subtitle {
     font-size: 2.2rem;
@@ -673,16 +673,16 @@ footer {
  
   /* Shrink the page titles and subtitles on phones, and reduce the body paragraphs' first-line indent for more horizontal room. */
   .home-page header h1 {
-    font-size: 1.7rem;
+    font-size: 2.3rem;
   }
   .home-page .subtitle {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
   }
   header h1 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .subtitle {
-    font-size: 1.85rem;
+    font-size: 2rem;
   }
   .body-text {
     text-indent: 1.25em;

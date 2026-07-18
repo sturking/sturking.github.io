@@ -1,3 +1,8 @@
+/* 
+=============================================================
+  SITE-WIDE DEFAULTS & PAGE BACKGROUND
+=============================================================
+*/
 /* Use border-box sizing everywhere so padding and border count as part of an element's width. Keeps fixed-size controls and images from overflowing on small (mobile) screens. */
 *,
 *::before,

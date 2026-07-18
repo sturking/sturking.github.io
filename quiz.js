@@ -148,8 +148,6 @@ function showScore(score) {
     scorecard.className = "scorecard fail";
   }
  
-  scorecard.textContent =
-    verdict + "! \n" + score + " / " + TOTAL + " points (" + percent + "%)";
   scorecard.innerHTML = 
     '<span class="verdict">' + verdict + "!</span>\n" + 
     score + " / " + TOTAL + " points (" + percent + "%)";

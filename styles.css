@@ -183,20 +183,10 @@ main {
   text-decoration: underline;
   text-decoration-style: wavy;
 }
-
-/* Section headings that are bold only, with no underline */
-.section-title.plain {
-  text-decoration: none;
-}
  
 /* The first heading on a page sits directly below the menu. */
 main > .section-title:first-child {
   margin-top: 0.15rem;
-}
-
-/* Indent abstract and key terms text */
-.indent {
-  margin-left: 1.5em;
 }
 
 /* Center the welcome line on the home page */

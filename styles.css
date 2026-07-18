@@ -534,10 +534,6 @@ footer {
   color: #000000;
   background-color: #d0e3f9;
 }
-.nav-toggle:focus-visible {
-  color: #ffffff;
-  background-color: #706f6f;
-}
 
 /* Keyboard focus still highlights the navicon on all devices. */
 .nav-toggle:focus-visible {
@@ -730,13 +726,6 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
-  }
-
-  /* "Main Menu" heading sits inline next to the navicon (home page only). */
-  .toc-title {
-    margin: 0;
-    order: 0;
-    font-size: 1.3rem;
   }
 
   /* Show the navicon on mobile, next to "Main Menu" and first in the row. */

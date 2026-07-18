@@ -395,6 +395,13 @@ footer {
   color: #ae0b02;
 }
 
+/* Make the verdict (PASS!/FAIL!) larger than the score line below it. */
+.scorecard .verdict {
+  font-size: 7rem;
+  overflow-wrap: break-word;
+  max-width: 80%;
+}
+
 /* 
 ==========
   TABLES
@@ -491,7 +498,7 @@ footer {
   max-width: 100%;
 }
 .img-KSU {
-  max-height: 120px;
+  max-height: 100px;
 }
 .img-shield {
   max-height: 140px;
@@ -591,7 +598,7 @@ footer {
 
   /* Shrink the footer as screen width is reduced. */
   footer {
-    font-size: 1rem;
+    font-size: 1.15rem;
   }
 
   /* Put the image and text in a single, centered column instead of side by side.
@@ -615,14 +622,22 @@ footer {
   .img-PopularBrowsers,
   .img-BW1,
   .img-BW2,
-  .img-browsing,
-  .img-shield,
-  .img-KSU {
+  .img-browsing {
     width: auto;
     height: auto;
     max-width: 100%;
     display: block;
     margin: 1rem auto;
+    padding: 0;
+  }
+
+  .img-shield,
+  .img-KSU{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: -0.7rem auto 1rem;
     padding: 0;
   }
  
@@ -642,6 +657,11 @@ footer {
     background-color: #d0e3f9;
     font-weight: bold;
   }
+
+  /* Reduce the enlarged verdict (PASS!/FAIL!) text to fit on a tablet or smaller screens. */
+.scorecard .verdict {
+  font-size: 5rem;
+}
 }
  
 /* PHONE SCREEN DISPLAY STYLE: Set breakpoint and max width, which lets <main> take up the full screen width on mobile devices. */
@@ -659,7 +679,7 @@ footer {
     font-size: 1.1rem;
   }
   header h1 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
   .subtitle {
     font-size: 1.85rem;
@@ -677,9 +697,9 @@ footer {
 
   /* Shrink the footer as screen width is reduced. */
   footer {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
- 
+
   /* Make tables responsive. Stack each term and its definition into full-width
    blocks so they're readable on a narrow screen, keeping each term joined
    to its definition below. 
@@ -750,4 +770,9 @@ footer {
     width: 100%;
     padding: 14px 16px;
   }
+
+  /* Reduce the enlarged verdict (PASS!/FAIL!) text to fit on a phone or smaller screens. */
+.scorecard .verdict {
+  font-size: 3.5rem;
+}
 }

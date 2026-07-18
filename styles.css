@@ -256,14 +256,13 @@ footer {
   text-align: center;
 }
 
-/* Each question contained in a bordered box 
-display: flow-root; 
-*/
+/* Each question is contained in a bordered box. */
 .question {
   margin-bottom: 1.25rem;
   padding: 1.25rem;
   border: 2px solid #3d5169;
   background-color: #f6f1e6;
+  display: flow-root
 }
  
 .question .q-title {
@@ -271,17 +270,15 @@ display: flow-root;
   font-weight: bold;
   color: #36399a;
   margin-bottom: 1rem;
-}
-
-/* float: left;
+  float: left;
   width: 100%;
   padding: 0; 
+}
 
-Push the answers below the floated question text. 
+/* Push the answers below the floated question text. */
 .question legend + * {
   clear: both;
 }
-*/
 
 /* One answer choice per line */
 .question label {

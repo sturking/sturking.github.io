@@ -514,6 +514,16 @@ footer {
   NAVICON FOR THE MOBILE MENU TOGGLE
 ======================================
 */
+/* Hide text visually but keep it available to screen readers. Used to name the navicon toggle without an aria-label on the <label>. */
+
+visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
 /* This checkbox stays hidden. It only remembers whether the menu is open. */
 .nav-toggle-checkbox {
   display: none;

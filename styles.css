@@ -84,6 +84,7 @@ header h1 a {
 
 .home-page .subtitle {
   font-size: 1.6rem;
+  text-align: center;
   margin: 1.25rem auto;
   width: fit-content;
   height: auto;
@@ -123,7 +124,7 @@ nav h2 {
   text-decoration: underline;
   margin-top: 0;
   margin-bottom: 1.25rem;
-  font-family: 'Georgia', serif
+  font-family: 'Georgia', serif;
 }
 
 /* Customize menu layout */
@@ -525,14 +526,6 @@ footer {
   border-radius: 15px;
 }
 
-/* The menu icon changes when you hover over it or focus it. 
-.nav-toggle:hover,
-.nav-toggle:focus-visible {
-  color: #ffffff;
-  background-color: #706f6f;
-}
-*/
-
 /* Show the hover color only for mouse users. This stops the hover style from sticking after a tap on touch screens. */
 @media (hover: hover) {
   .nav-toggle:hover {
@@ -593,16 +586,17 @@ footer {
 
   /* Scale down the oversized home-page title and section subtitle to ensure the text fits on a narrow screen without overflowing. */
   .home-page header h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .home-page .subtitle {
     font-size: 1.15rem;
   }
   header h1 {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
   }
   .subtitle {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
+
   }
 
   /* Responsive menu configuration. A <label> tied to a hidden checkbox toggles the menu. On small screens "Main Menu" sits beside the navicon, and the menu opens below it.
@@ -621,7 +615,9 @@ footer {
   .toc-title {
     margin: 0;
     order: 0;
+    font-size: 1.3rem;
   }
+
   /* Show the navicon on mobile, next to "Main Menu" and first in the row. */
   .nav-toggle {
     display: flex;
@@ -692,7 +688,7 @@ footer {
 }
  
 /* PHONE SCREEN DISPLAY STYLE: Set breakpoint and max width, which lets <main> take up the full screen width on mobile devices. */
-@media (max-width: 480px) {
+@media (max-width: 439px) {
   main {
     margin: 0.75rem 0.5rem;
     padding: 0.85rem 0.85rem 0.6rem;
@@ -700,19 +696,26 @@ footer {
  
   /* Shrink the page titles and subtitles on phones, and reduce the body paragraphs' first-line indent for more horizontal room. */
   .home-page header h1 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
   .home-page .subtitle {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
   header h1 {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
   .subtitle {
-    font-size: 1.6rem;
+    font-size: 1.85rem;
   }
   .body-text {
     text-indent: 1.25em;
+  }
+
+  /* "Main Menu" heading sits inline next to the navicon (home page only). */
+  .toc-title {
+    margin: 0;
+    order: 0;
+    font-size: 1.3rem;
   }
 }
  

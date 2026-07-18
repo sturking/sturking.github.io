@@ -566,7 +566,11 @@ footer {
     font-size: 2rem;
   }
   .subtitle {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+  }
+
+  .home-page .subtitle {
+    font-size: 1.15rem;
   }
 
   /* Responsive menu configuration. A <label> tied to a hidden checkbox toggles the menu. On small screens "Main Menu" sits beside the navicon, and the menu opens below it.
@@ -666,9 +670,11 @@ footer {
   .home-page header h1 {
     font-size: 1.6rem;
   }
-  .subtitle,
+  .subtitle {
+    font-size: 1.5rem;
+  }
   .home-page .subtitle {
-    font-size: 1.35rem;
+    font-size: 1.15rem;
   }
   .body-text {
     text-indent: 1.25em;

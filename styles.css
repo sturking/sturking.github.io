@@ -202,6 +202,13 @@ main > .section-title:first-child {
   text-indent: 2.5em;
 }
 
+/* On How Browsers Work page, style the bullet points that describe features in the fourth paragraph. */
+.features {
+  margin: 0 auto 1.25rem;
+  line-height: 1.5;
+  width: fit-content;
+}
+
 /* Configure APA-style reference list */
 .references {
   list-style: none;

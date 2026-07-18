@@ -256,29 +256,32 @@ footer {
   text-align: center;
 }
 
-/* Each question contained in a bordered box */
+/* Each question contained in a bordered box 
+display: flow-root; 
+*/
 .question {
   margin-bottom: 1.25rem;
   padding: 1.25rem;
   border: 2px solid #3d5169;
   background-color: #f6f1e6;
-  display: flow-root;
 }
  
-.question legend {
+.question .q-title {
   font-size: 1.1rem;
   font-weight: bold;
   color: #36399a;
-  float: left;
-  width: 100%;
-  padding: 0;
   margin-bottom: 1rem;
 }
 
-/* Push the answers below the floated question text. */
+/* float: left;
+  width: 100%;
+  padding: 0; 
+
+Push the answers below the floated question text. 
 .question legend + * {
   clear: both;
 }
+*/
 
 /* One answer choice per line */
 .question label {

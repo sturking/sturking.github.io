@@ -92,7 +92,7 @@ header h1 a {
 */ 
 /* Configure the menu row & flex display */
 nav {
-  padding: 1rem 16px;
+  padding: 1.3rem 16px 1rem;
   background-color: #c9c6c0;
   position: sticky;
   top: 0;
@@ -117,7 +117,7 @@ nav h2 {
   text-align: center;
   text-decoration: underline;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   font-family: 'Georgia', serif
 }
 
@@ -486,6 +486,12 @@ footer {
 .img-browsing {
   display: block;
   margin: 1.5rem auto;
+  max-width: 100%;
+}
+
+.img-generalbrowsers {
+  display: block;
+  margin-bottom: 1.5rem;
   max-width: 100%;
 }
 

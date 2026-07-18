@@ -570,12 +570,14 @@ footer {
   .home-page header h1 {
     font-size: 2rem;
   }
-  .subtitle {
-    font-size: 1.5rem;
-  }
-
   .home-page .subtitle {
     font-size: 1.15rem;
+  }
+  header h1 {
+    font-size: 1.15rem;
+  }
+  .subtitle {
+    font-size: 1.6rem;
   }
 
   /* Responsive menu configuration. A <label> tied to a hidden checkbox toggles the menu. On small screens "Main Menu" sits beside the navicon, and the menu opens below it.
@@ -671,19 +673,23 @@ footer {
     padding: 0.85rem 0.85rem 0.6rem;
   }
  
-  /* Make the home title slightly smaller, and reduce the body paragraphs' first-line indent for more horizontal room. */
+  /* Shrink the page titles and subtitles on phones, and reduce the body paragraphs' first-line indent for more horizontal room. */
   .home-page header h1 {
     font-size: 1.6rem;
-  }
-  .subtitle {
-    font-size: 1.5rem;
   }
   .home-page .subtitle {
     font-size: 1.15rem;
   }
+  header h1 {
+    font-size: 1.15rem;
+  }
+  .subtitle {
+    font-size: 1.6rem;
+  }
   .body-text {
     text-indent: 1.25em;
   }
+}
  
   /* Make tables responsive. Stack each term and its definition into full-width
    blocks so they're readable on a narrow screen, keeping each term joined

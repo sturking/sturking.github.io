@@ -92,7 +92,7 @@ header h1 a {
 */ 
 /* Configure the menu row & flex display */
 nav {
-  padding: 1.5rem 16px;
+  padding: 1rem 16px;
   background-color: #c9c6c0;
   position: sticky;
   top: 0;
@@ -109,6 +109,7 @@ nav ul {
   justify-content: center;
   list-style: none;
   margin: 0;
+  margin-bottom: 0.35rem;
   padding: 0;
 }
 
@@ -172,7 +173,7 @@ main {
 .section-title {
   font-size: 1.1rem;
   margin-top: 1.75rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   text-decoration: underline;
   text-decoration-style: wavy;
 }
@@ -182,9 +183,9 @@ main {
   text-decoration: none;
 }
  
-/* The first heading on a page sits directly below the menu */
+/* The first heading on a page sits directly below the menu. */
 main > .section-title:first-child {
-  margin-top: 0.5rem;
+  margin-top: 0.15rem;
 }
 
 /* Indent abstract and key terms text */
@@ -261,6 +262,7 @@ footer {
   padding: 1.25rem;
   border: 2px solid #3d5169;
   background-color: #f6f1e6;
+  display: flow-root;
 }
  
 .question legend {
@@ -269,7 +271,13 @@ footer {
   color: #36399a;
   float: left;
   width: 100%;
-  margin-bottom: 0.75rem;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+/* Push the answers below the floated question text. */
+.question legend + * {
+  clear: both;
 }
 
 /* One answer choice per line */
@@ -390,7 +398,7 @@ footer {
 .terms {
   border-collapse: collapse;
   width: 100%;
-  margin: 1.5em auto 1rem;
+  margin: 1.5em auto 0.5rem;
 }
 
 .terms th,

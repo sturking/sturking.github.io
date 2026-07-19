@@ -710,17 +710,17 @@ footer {
     text-indent: 1.25em;
   }
 
+  /* Shrink the footer as screen width is reduced. */
+  footer {
+    font-size: 1rem;
+  }
+
   /* "Main Menu" heading sits inline next to the navicon (home page only). */
   .toc-title {
     order: -1;
     flex-basis: 100%;
     margin: 0;
     font-size: 1.4rem;
-  }
-
-  /* Shrink the footer as screen width is reduced. */
-  footer {
-    font-size: 1rem;
   }
 
   /* Make tables responsive. Stack each term and its definition into full-width

@@ -531,15 +531,19 @@ visually-hidden {
 /* Configure the navicon toggle button. It stays hidden until the mobile breakpoint. */
 .nav-toggle {
   display: none;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   margin: 0 auto;
-  padding: 8px 14px;
+  padding: 10px 14px;
   cursor: pointer;
   color: #000000;
   background-color: #d0e3f9;
   border: 3px outset #706f6f;
   border-radius: 15px;
+  font-size: 1.2rem;
+  text-decoration: underline overline;
+  color: #000000;
+  font-family: 'Georgia', serif;
+  text-underline-position: under;
 }
 
 /* Show the hover color only for mouse users. This stops the hover style from sticking after a tap on touch screens. */
@@ -571,14 +575,27 @@ visually-hidden {
 /* Caret faces down while closed to hint the menu expands downward. */
 .nav-toggle::after {
   content: "\25BE";
-  font-size: 1.5rem;
-  line-height: 1;
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 1em;
   transition: transform 0.2s ease;
 }
 
 /* Flip the caret to point up when the menu is open. */
 .nav-toggle-checkbox:checked ~ .nav-toggle::after {
   transform: rotate(180deg);
+}
+
+
+/* On the home page, the navicon shows "Show the menu" while collapsed and "Hide the menu" once expanded. */
+.home-page .nav-toggle .label-hide {
+  display: none;
+}
+.home-page .nav-toggle-checkbox:checked ~ .nav-toggle .label-show {
+  display: none;
+}
+.home-page .nav-toggle-checkbox:checked ~ .nav-toggle .label-hide {
+  display: inline;
 }
 
 /* 
@@ -707,7 +724,7 @@ visually-hidden {
     order: -1;
     flex-basis: 100%;
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   /* Shrink the footer as screen width is reduced. */
@@ -765,7 +782,7 @@ visually-hidden {
 
   /* Show the navicon on mobile. */
   .nav-toggle {
-    display: flex;
+    display: block;
     margin: 0;
     order: 0;
   }

@@ -514,7 +514,7 @@ footer {
   NAVICON FOR THE MOBILE MENU TOGGLE
 ======================================
 */
-/* Hide text visually but keep it available to screen readers. Used to name the navicon toggle without an aria-label on the <label>. */
+/* Hide text visually but keep it available to screen readers. */
 visually-hidden {
   position: absolute;
   width: 1px;
@@ -704,8 +704,9 @@ visually-hidden {
 
   /* "Main Menu" heading sits inline next to the navicon (home page only). */
   .toc-title {
+    order: -1;
+    flex-basis: 100%;
     margin: 0;
-    order: 0;
     font-size: 1.3rem;
   }
 
@@ -762,11 +763,11 @@ visually-hidden {
     gap: 0.75rem;
   }
 
-  /* Show the navicon on mobile, next to "Main Menu" and first in the row. */
+  /* Show the navicon on mobile. */
   .nav-toggle {
     display: flex;
     margin: 0;
-    order: -1;
+    order: 0;
   }
 
   /* Menu is collapsed by default. Checking the hidden checkbox (via the navicon label) reveals the menu as a full-width stacked column on its own row below. Links go full width with padding for bigger tap targets. */

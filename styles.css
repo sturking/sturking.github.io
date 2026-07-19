@@ -515,7 +515,7 @@ footer {
 ======================================
 */
 /* Hide text visually but keep it available to screen readers. */
-visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;

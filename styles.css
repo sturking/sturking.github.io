@@ -514,15 +514,6 @@ footer {
   NAVICON FOR THE MOBILE MENU TOGGLE
 ======================================
 */
-/* Hide text visually but keep it available to screen readers. */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip-path: inset(50%);
-}
-
 /* This checkbox stays hidden. It only remembers whether the menu is open. */
 .nav-toggle-checkbox {
   display: none;
@@ -539,7 +530,7 @@ footer {
   background-color: #d0e3f9;
   border: 3px outset #706f6f;
   border-radius: 15px;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   text-decoration: underline overline;
   color: #000000;
   font-family: 'Georgia', serif;

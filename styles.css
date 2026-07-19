@@ -515,7 +515,6 @@ footer {
 ======================================
 */
 /* Hide text visually but keep it available to screen readers. Used to name the navicon toggle without an aria-label on the <label>. */
-
 visually-hidden {
   position: absolute;
   width: 1px;

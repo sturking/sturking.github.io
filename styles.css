@@ -742,8 +742,7 @@ footer {
     margin-bottom: 0.75rem;
   }
  
-  /* For the quiz, make the action buttons and text inputs full width so they're easy to
-     tap on a small screen. */
+  /* For the quiz, make the action buttons and text inputs full width so they're easy to tap on a small screen. */
   .actions {
     flex-direction: column;
     align-items: stretch;
